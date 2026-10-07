@@ -84,18 +84,30 @@ function M.colorscheme(flavour)
     return
   end
 
-  apply_flavour(flavour)
-
   local palette = require("littleprince.palette").get(flavour)
-  -- Set 'background' so any plugin that branches on it does the right thing.
+
+  -- Order matters: setting `vim.o.background` after a fresh `nvim_set_hl`
+  -- makes Neovim silently reset `Normal` (and friends) back to its default
+  -- fg/bg. So we set background BEFORE applying highlights so the explicit
+  -- fg/bg values actually stick.
   local bg = M.config.background
     or (palette.is_light and "light" or "dark")
   vim.o.background = bg
+
+  -- Clear any highlights left over from the previous colorscheme. This must
+  -- come BEFORE apply_flavour, otherwise it wipes the very highlights we are
+  -- about to set.
   if vim.g.colors_name then
     vim.cmd("hi clear")
   end
+
+  apply_flavour(flavour)
+
   vim.g.colors_name = flavour == "prince" and "littleprince" or ("littleprince-" .. flavour)
-  if vim.o.termguicolors == nil then
+
+  -- `vim.o.termguicolors` defaults to `false`, never `nil`, so the previous
+  -- `== nil` guard never fired. Use a boolean test instead.
+  if not vim.o.termguicolors then
     vim.o.termguicolors = true
   end
 end
