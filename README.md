@@ -38,7 +38,7 @@ You can switch flavours at any time. The default is `prince`.
 
 ```lua
 {
-  "jaime/the-little-prince-themes.nvim",
+  "jblandonsv/the-little-prince-themes.nvim",
   lazy = false,         -- load on startup so :colorscheme works out of the box
   priority = 1000,
   config = function()
