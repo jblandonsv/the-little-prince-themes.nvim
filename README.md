@@ -1,14 +1,7 @@
 # the-little-prince-themes.nvim
 
-A catppuccin-flavoured Neovim colorscheme collection inspired by *The Little
-Prince* (*Le Petit Prince*) by **Antoine de Saint-Exupéry** — every flavour
-carries a fragment of the story: the deep night sky of asteroid B-612, the
-proud rose, the wise fox, and the gentle sheep the Little Prince keeps asking
-the aviator to draw.
-
-> "On ne voit bien qu'avec le cœur. L'essentiel est invisible pour les yeux."
-> (*It is only with the heart that one can see rightly; what is essential is
-> invisible to the eye.*)
+A Neovim colorscheme collection inspired by _The Little
+Prince_ (_Le Petit Prince_) by **Antoine de Saint-Exupéry**
 
 **Inspired by the book _The Little Prince_ by Antoine de Saint-Exupéry. The
 characters, illustrations and the book itself are the intellectual property of
@@ -16,19 +9,19 @@ the author / his estate and the relevant publishers — all rights reserved.**
 
 This project is a non-commercial fan tribute by an independent developer; it
 is **not endorsed by, sponsored by, or affiliated with** Antoine de
-Saint-Exupéry's estate, his publishers, or any official *The Little Prince*
+Saint-Exupéry's estate, his publishers, or any official _The Little Prince_
 organisation.
 
 ---
 
 ## Flavours
 
-| Flavour | Colorscheme name | Mode | Inspired by |
-| --- | --- | --- | --- |
-| `prince` | `littleprince` (default), `littleprince-prince` | **Dark** | The Little Prince — gold hair, green suit, deep-blue asteroid sky |
-| `rose`   | `littleprince-rose` | **Dark** | The Rose — dusty pinks, midnight mauve, stem-green leaves |
-| `fox`    | `littleprince-fox` | **Dark** | The Fox — warm amber fur, savanna twilights, earth tones |
-| `sheep`  | `littleprince-sheep` | **Light** | The Sheep — cream wool, pastels, soft storybook page |
+| Flavour  | Colorscheme name                                | Mode      | Inspired by                                                       |
+| -------- | ----------------------------------------------- | --------- | ----------------------------------------------------------------- |
+| `prince` | `littleprince` (default), `littleprince-prince` | **Dark**  | The Little Prince — gold hair, green suit, deep-blue asteroid sky |
+| `rose`   | `littleprince-rose`                             | **Dark**  | The Rose — dusty pinks, midnight mauve, stem-green leaves         |
+| `fox`    | `littleprince-fox`                              | **Dark**  | The Fox — warm amber fur, savanna twilights, earth tones          |
+| `sheep`  | `littleprince-sheep`                            | **Light** | The Sheep — cream wool, pastels, soft storybook page              |
 
 You can switch flavours at any time. The default is `prince`.
 
@@ -209,7 +202,7 @@ active flavour.
 
 ## Inspiration & Acknowledgements
 
-- *Le Petit Prince* (first published 1943) — **Antoine de Saint-Exupéry**. All
+- _Le Petit Prince_ (first published 1943) — **Antoine de Saint-Exupéry**. All
   rights reserved.
 - `catppuccin/nvim` — for the `setup({ flavour = ... })` UX, the palette
   structure and the plugin integration model.
@@ -217,12 +210,11 @@ active flavour.
 ## License
 
 The **plugin code** in this repository is released under the **MIT License**
-© Jaime — feel free to fork, tweak and re-flavour.
 
-*The Little Prince* (the novel, its characters, plot, illustrations and
+_The Little Prince_ (the novel, its characters, plot, illustrations and
 associated trademarks) is the work of **Antoine de Saint-Exupéry** and is
-**not** part of this MIT-licensed codebase. The titles *The Little Prince* /
-*Le Petit Prince*, and the character names drawn from it (the Little Prince,
+**not** part of this MIT-licensed codebase. The titles _The Little Prince_ /
+_Le Petit Prince_, and the character names drawn from it (the Little Prince,
 the Rose, the Fox, the Sheep, the Snake, the Baobabs, Asteroid B-612, etc.),
 are the property of their respective rightsholders — all rights reserved. No
 passage from the book or its original illustrations is reproduced in this
