@@ -77,7 +77,7 @@ You can switch flavours at any time. The default is `prince`.
 
 ```vim
 " Minimal — keeps the default flavour (prince)
-Plug 'jaime/the-little-prince-themes.nvim'
+Plug 'jblandonsv/the-little-prince-themes.nvim'
 
 " Then in your init.lua or init.vim:
 colorscheme littleprince
